@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/taekyungsa/css/reset.css" />
+    <link rel="stylesheet" href="../../static/taekyungsa/css/common.css" />
+    <link rel="stylesheet" href="../../static/taekyungsa/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 네비게이션 바 (GNB) -->
+      <div class="navbar">
+        <div class="navbar__content">
+          <!-- 로고 -->
+          <a href="index.html" class="logo__container">
+            <img src="../../static/taekyungsa/images/png/logo.png" alt="" />
+          </a>
+          <!-- //로고 -->
+
+          <!-- 메뉴 -->
+          <ul class="menu__container">
+            <li>
+              <a href="sub01_01.html" class="active">체육복사이즈</a>
+            </li>
+            <li>
+              <a href="sub02_01.html">온라인주문</a>
+            </li>
+            <li>
+              <a href="sub03_01.html">주문안내</a>
+            </li>
+            <li>
+              <a href="sub04_01.html">주문내역조회</a>
+            </li>
+            <li>
+              <a href="sub05_01.html">교복비납입증명서</a>
+            </li>
+            <li>
+              <a href="sub06_01.html">회사소개</a>
+            </li>
+          </ul>
+          <!-- //메뉴 -->
+        </div>
+      </div>
+      <!-- //네비게이션 바 (GNB) -->
+
+      <div class="sub sub01 sub04_01">
+        <!-- 서브 배너 -->
+        <div class="sub__banner subtop">
+          <div class="subtitle">
+            <h1>주문내역조회</h1>
+            <h3>체육복 <b>고객만족도 1위</b></h3>
+            <span><b>태경사</b>가 만들면 다릅니다.</span>
+          </div>
+        </div>
+        <!-- //서브 배너 -->
+
+        <!-- 컨텐츠 -->
+        <div class="contents clearfix">
+          <div class="sbox clearfix">
+            <div class="stitle">
+              <h1>주문내역조회</h1>
+              <p>주문 시 입력하셨던 정보를 정확히 입력해주세요</p>
+            </div>
+            <div class="ordercheckbox">
+              <div class="AW_login_nonesearch_wrap">
+                <!--
+                  <div class="tit">
+                      <span>주문내역</span> 조회
+                    </div>
+                  <small>상품결제시 받으신 주문번호와 주문자명을 정확히 입력하여 주시기 바랍니다.</small>
+                -->
+                <div class="AW_login_nonesearch">
+                  <div class="inner">
+                    <div class="cont">
+                      <form
+                        name="loginFrm"
+                        action="order_list.html"
+                        method="post"
+                        onsubmit="return loginCheck(this);"
+                      >
+                        <input type="hidden" name="ptype" value="list" />
+                        <input type="hidden" name="order_guest" value="true" />
+                        <table
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          align="center"
+                        >
+                          <tbody>
+                            <tr class="clearfix">
+                              <th>주문자명</th>
+                              <td>
+                                <input
+                                  name="send_name"
+                                  type="text"
+                                  class="input_id"
+                                  placeholder="주문시 입력하신 성함을 입력해주세요."
+                                />
+                              </td>
+                            </tr>
+                            <tr class="clearfix">
+                              <th>휴대전화번호</th>
+                              <td>
+                                <input
+                                  name="send_hphone1"
+                                  type="text"
+                                  class="input_id"
+                                  value="010"
+                                /><span class="line">-</span>
+                                <input
+                                  name="send_hphone2"
+                                  type="text"
+                                  class="input_id"
+                                  value=""
+                                /><span class="line">-</span>
+                                <input
+                                  name="send_hphone3"
+                                  type="text"
+                                  class="input_id"
+                                  value=""
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><button>조회하기</button></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- //AW_login_nonesearch/ -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //컨텐츠 -->
+      </div>
+      <!-- Flaoting Action Button -->
+      <div class="fab">
+        <a>
+          <button class="fab-chatbot-button"></button>
+        </a>
+        <a href="prd_cart.html" class="fab-cart"
+          ><span class="material-icons">shopping_cart</span></a
+        >
+      </div>
+      <!-- //Flaoting Action Button -->
+      <!-- 푸터 -->
+      <div class="copy">
+        <div class="cbox clearfix">
+          <div class="ssbox clearfix">
+            <a href="#none">
+              <span>CUSTOMER CENTER</span>
+              <span class="material-icons">desktop_mac</span>
+              <span>02 · 993 · 1539</span>
+            </a>
+          </div>
+          <div class="ssbox clearfix">
+            <p>Operating hours : am 10:00 ~ pm 06:00</p>
+            <p>
+              상호명 : 태경사 / 사업자등록번호 : 217-02-24322 / 제1공장 주소 :
+              서울시 도봉로 110 라길 18 / T : 02 · 993 · 1539
+            </p>
+            <p>
+              제2공장 주소 : 의정부시 배꽃길 7. 의정부 더리브 센텀스퀘어 2동
+              507호 / 사업자등록번호 : 307-15-61708 / T : 031-543-0863
+            </p>
+            <p>H : 010 · 9167 · 7883 / E-mail : na7060@hanmail.net</p>
+            <p>Copyright ⓒ TEAKYUNGSA Co 1998. All rights reserved</p>
+          </div>
+        </div>
+      </div>
+      <!-- //푸터 -->
+    </div>
+  </body>
+</html>

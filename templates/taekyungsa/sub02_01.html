@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/taekyungsa/css/reset.css" />
+    <link rel="stylesheet" href="../../static/taekyungsa/css/common.css" />
+    <link rel="stylesheet" href="../../static/taekyungsa/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 네비게이션 바 (GNB) -->
+      <div class="navbar">
+        <div class="navbar__content">
+          <!-- 로고 -->
+          <a href="index.html" class="logo__container">
+            <img src="../../static/taekyungsa/images/png/logo.png" alt="" />
+          </a>
+          <!-- //로고 -->
+
+          <!-- 메뉴 -->
+          <ul class="menu__container">
+            <li>
+              <a href="sub01_01.html" class="active">체육복사이즈</a>
+            </li>
+            <li>
+              <a href="sub02_01.html">온라인주문</a>
+            </li>
+            <li>
+              <a href="sub03_01.html">주문안내</a>
+            </li>
+            <li>
+              <a href="sub04_01.html">주문내역조회</a>
+            </li>
+            <li>
+              <a href="sub05_01.html">교복비납입증명서</a>
+            </li>
+            <li>
+              <a href="sub06_01.html">회사소개</a>
+            </li>
+          </ul>
+          <!-- //메뉴 -->
+        </div>
+      </div>
+      <!-- //네비게이션 바 (GNB) -->
+
+      <div class="sub sub01 sub02_01">
+        <!-- 서브 배너 -->
+        <div class="sub__banner subtop">
+          <div class="subtitle">
+            <h1>온라인주문</h1>
+            <h3>체육복 <b>고객만족도 1위</b></h3>
+            <span><b>태경사</b>가 만들면 다릅니다.</span>
+          </div>
+        </div>
+        <!-- //서브 배너 -->
+
+        <!-- 컨텐츠 -->
+        <div class="contents">
+          <div class="noticebox">
+            <p>
+              <strong>제품주문은 회원가입이 필요 없습니다.</strong> 이름,
+              전화번호, 입금자명을<br />
+              입력하여 주문을 하게 되며, 주문내역 조회가 필요한 경우 이름과
+              전화<br />번호로 내역을 확인 할 수 있습니다.<br />
+              ※ 결제는 <strong>무통장 입금만</strong> 운영되고 있습니다.<br />
+              ※ 사이즈 <strong>115부터 품에서 5cm씩</strong> 차이가
+              발생합니다.<br />
+              <strong style="color: red; font-size: 25px"
+                >※ 주문제작 관계로 주문 시에는 4주~6주정도 소요됩니다.</strong
+              ><br />
+              <strong style="color: red; font-size: 25px"
+                >※ 상담가능시간 : 오전 10:00 ~ 오후 05:00</strong
+              >
+            </p>
+          </div>
+          <div class="sbox clearfix">
+            <div class="stitle">
+              <h1>주문자 정보 입력</h1>
+              <p>주문자님의 정보를 정확히 입력해주세요</p>
+            </div>
+            <div class="ssbox">
+              <div class="inputbox">
+                <form action="prd_search.html">
+                  <!--
+                    <div class="clearfix"><span>이름입력</span><input type="text" placeholder="이름을 입력해주세요"></div>
+                    <div class="clearfix"><span>전화번호입력</span><input type="text" placeholder="- 는 제외하고 입력해주세요"></div>
+ -->
+                  <!--                   <div class="clearfix"><input type="button" value="상품선택" onClick="location.href='http://tks2022.lineartweb.co.kr/sub01_02.html'"></div>-->
+                  <script language="Javascript">
+                    <!--
+                    function prdSearchCheck() {
+                      return true;
+                    }
+                    -->
+                  </script>
+
+                  <input type="hidden" name="searchopt" value="prdname" />
+                  <span class="search">학교명 검색</span>
+                  <!--<input name="searchkey" value="" type="text" placeholder="학교명을 입력하세요 예)한국중학교"> ///////////20220503 기존검색폼입니다.///////////-->
+
+                  <select name="catcode" id="">
+                    <option value="">학교를 선택하세요.</option>
+                    <option value="123000000">가평고등학교(체육복)</option>
+                    <option value="113000000">고양중학교(체육복)</option>
+                    <option value="145000000">길음중학교(체육복)</option>
+                    <option value="146000000">김포신곡중학교(체육복)</option>
+                    <option value="142000000">강신중학교(체육복)</option>
+                    <option value="132000000">구갈중학교(체육복)</option>
+                    <option value="131000000">금오중학교(체육복)</option>
+                    <option value="138000000">덕계고등학교(체육복)</option>
+                    <option value="116000000">동구여자중학교(체육복)</option>
+                    <option value="137000000">
+                      동국대학부속여자중학교(체육복)
+                    </option>
+                    <option value="126000000">문화고등학교(체육복)</option>
+                    <option value="133000000">민락중학교(체육복)</option>
+                    <option value="105000000">발곡중학교(체육복)</option>
+                    <option value="147000000">부용고등학교(체육복)</option>
+                    <option value="104000000">삼선중학교(체육복)</option>
+                    <option value="122000000">삼성고등학교(체육복)</option>
+                    <option value="139000000">서라벌고등학교(체육복)</option>
+                    <option value="134000000">서운중학교(체육복)</option>
+                    <option value="125000000">서인천고등학교(체육복)</option>
+                    <option value="148000000">선덕고등학교(체육복)</option>
+                    <option value="114000000">성사중학교(체육복)</option>
+                    <option value="101000000">솔샘중학교(체육복)</option>
+                    <option value="128000000">송양중학교(체육복)</option>
+                    <option value="110000000">수송중학교(체육복)</option>
+                    <option value="140000000">수원중정소학교(체육복)</option>
+                    <option value="102000000">신도봉중학교(체육복)</option>
+                    <option value="136000000">신방학중학교(체육복)</option>
+                    <option value="115000000">신정여자중학교(체육복)</option>
+                    <option value="100000000">신창중학교(체육복)</option>
+                    <option value="141000000">생연중학교(체육복)</option>
+                    <option value="143000000">역삼중학교(체육복)</option>
+                    <option value="119000000">양정고등학교(체육복)</option>
+                    <option value="103000000">양천중학교(체육복)</option>
+                    <option value="152000000">이천중학교(체육복)</option>
+                    <option value="150000000">매원고등학교(체육복)</option>
+                    <option value="117000000">
+                      영신간호비지니스고등학교(체육복)
+                    </option>
+                    <option value="118000000">영신여자고등학교(체육복)</option>
+                    <option value="106000000">용천중학교(체육복)</option>
+                    <option value="149000000">용신중학교(체육복)</option>
+                    <option value="127000000">주곡중학교(체육복)</option>
+                    <option value="111000000">조양중학교(체육복)</option>
+                    <option value="109000000">중계중학교(체육복)</option>
+                    <option value="124000000">잠실여자고등학교(체육복)</option>
+                    <option value="129000000">충의중학교(체육복)</option>
+                    <option value="144000000">푸른솔중학교(체육복)</option>
+                    <option value="107000000">호매실중학교(체육복)</option>
+                    <option value="108000000">화계중학교(체육복)</option>
+                    <option value="135000000">회룡중학교(체육복)</option>
+                    <option value="130000000">효자중학교(체육복)</option>
+                    <option value="112000000">흥덕중학교(체육복)</option>
+                    <option value="151000000">영생고등학교(체육복)</option>
+                    <option value="153000000">솔터고등학교(체육복)</option>
+                    <option value="154000000">훈민중학교(체육복)</option>
+                  </select>
+
+                  <button class="search_btn">검색</button>
+                </form>
+
+                <!--
+                    <div class="radiobox">
+                        <input type="radio" name="type" value="summer" checked>하복
+                        <input type="radio" name="type" value="winter">동복
+                    </div>                   
+ -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //컨텐츠 -->
+      </div>
+      <!-- Flaoting Action Button -->
+      <div class="fab">
+        <a>
+          <button class="fab-chatbot-button" id="chatbotButton"></button>
+        </a>
+        <a href="prd_cart.html" class="fab-cart"
+          ><span class="material-icons">shopping_cart</span></a
+        >
+      </div>
+      <!-- //Flaoting Action Button -->
+      <!-- 푸터 -->
+      <div class="copy">
+        <div class="cbox clearfix">
+          <div class="ssbox clearfix">
+            <a href="#none">
+              <span>CUSTOMER CENTER</span>
+              <span class="material-icons">desktop_mac</span>
+              <span>02 · 993 · 1539</span>
+            </a>
+          </div>
+          <div class="ssbox clearfix">
+            <p>Operating hours : am 10:00 ~ pm 06:00</p>
+            <p>
+              상호명 : 태경사 / 사업자등록번호 : 217-02-24322 / 제1공장 주소 :
+              서울시 도봉로 110 라길 18 / T : 02 · 993 · 1539
+            </p>
+            <p>
+              제2공장 주소 : 의정부시 배꽃길 7. 의정부 더리브 센텀스퀘어 2동
+              507호 / 사업자등록번호 : 307-15-61708 / T : 031-543-0863
+            </p>
+            <p>H : 010 · 9167 · 7883 / E-mail : na7060@hanmail.net</p>
+            <p>Copyright ⓒ TEAKYUNGSA Co 1998. All rights reserved</p>
+          </div>
+        </div>
+      </div>
+      <!-- //푸터 -->
+      <!-- 챗봇 -->
+      <div class="chatbot" id="chatbot">
+        <!-- head -->
+        <div class="head">
+          <div class="head__container">
+            <img
+              src="/static/taekyungsa/images/png/logo.png"
+              alt="logo"
+              class="logo"
+            />
+            <div class="head__text">
+              <div>태경사에게 문의하기</div>
+              <button class="head__button">
+                운영시간 보기<strong> ></strong>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- content -->
+        <div class="content">
+          <div class="content__container">
+            <div class="chat__container">
+              <div class="chat__wrapper">
+                <!-- 챗봇 채팅 -->
+                <div class="chat__time">{채팅 수신/발신 시간 OO:OO }</div>
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <!-- 최초 접속 메시지 -->
+                    <div class="chat__text">
+                      <span
+                        ><strong>안녕하세요, 태경사입니다.</strong
+                        ><br />궁금하신 내용을 선택해주세요 ! <br /><br />
+                        <strong>상담 운영 시간</strong><br />
+                        월-금 : 10:00 - 18:00 <br />점심시간 : 12:00 - 13:00
+                        <br />주말, 공휴일은 쉬어요</span
+                      >
+                    </div>
+                    <!-- 1단계 -->
+                    <div class="chat__text">
+                      <div>주문 내역이 있으신가요 ?</div>
+                      <div class="chat__select">
+                        <button type="button" class="first-step__button">
+                          예
+                        </button>
+                        <button type="button" class="first-step__button">
+                          아니요
+                        </button>
+                      </div>
+                    </div>
+                    <!-- 2단계 -->
+                    <div class="chat__text">
+                      <div>
+                        개인 정보 기반의 맞춤형 서비스를 위해 <br />이름과
+                        휴대폰 번호를 기입해주세요.
+                      </div>
+                    </div>
+                    <!-- 이전/처음 버튼 -->
+                  </div>
+                </div>
+                <!-- 사용자 채팅 -->
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-text">예</div>
+                  </div>
+                </div>
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>
+                        개인 정보 기반의 맞춤형 서비스를 위해 <br />이름과
+                        휴대폰 번호를 기입해주세요.
+                      </div>
+                    </div>
+                    <div class="chat__reset">
+                      <button class="chat__reset-button prev">
+                        <span>작성안내</span>
+                      </button>
+                      <button class="chat__reset-button home">
+                        <span>처음으로 돌아가기</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-button-container">
+                      <button class="chat__user-button">상품문의</button
+                      ><button class="chat__user-button">배송문의</button>
+                    </div>
+                    <div class="chat__user-button-container">
+                      <button class="chat__user-button">
+                        상품 주문시 안내사항</button
+                      ><button class="chat__user-button">주문내역 조회</button>
+                    </div>
+                    <div class="chat__user-button-container">
+                      <button class="chat__user-button">
+                        교복비 납입 증명서 작성 안내
+                      </button>
+                    </div>
+                    <div class="chat__user-button-container">
+                      <button class="chat__user-button">문의하기</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3-2 -->
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>상품에 대해 궁금한 점이 있으신가요?</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3-2-1 -->
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-text">사이즈가 궁금해요</div>
+                  </div>
+                </div>
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>
+                        사이즈 정보 제공은 아래 '사이즈 보러가기' 버튼을
+                        눌러주세요. 사이즈는 115부터 품에서 5cm씩 차이가
+                        발생합니다.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__reset">
+                  <button class="chat__reset-button prev">
+                    <span>사이즈 보러가기</span>
+                  </button>
+                  <button class="chat__reset-button home">
+                    <span>처음으로 돌아가기</span>
+                  </button>
+                </div>
+                <!-- 3-3 -->
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-text">상품 주문 시 안내사항</div>
+                  </div>
+                </div>
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>
+                        제품주문은 회원가입이 필요 없습니다. 이름, 전화번호,
+                        입금자명을 입력하여 주문을 하게 되며, 주문내역 조회가
+                        필요한 경우 이름과 전화 번호로 내역을 확인 할 수
+                        있습니다. <br /><br />※ 결제는 무통장 입금만 운영되고
+                        있습니다.<br />※ 사이즈 115부터 품에서 5cm씩 차이가
+                        발생합니다.<br />※ 주문제작 관계로 주문 시에는
+                        4주~6주정도 소요됩니다.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__reset">
+                  <button class="chat__reset-button prev">
+                    <span>온라인 주문</span>
+                  </button>
+                  <button class="chat__reset-button home">
+                    <span>처음으로 돌아가기</span>
+                  </button>
+                </div>
+                <!-- 3-4 -->
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-text">
+                      교복비 납입 증명서 작성 안내
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>
+                        교복비 납입 증명서 작성 안내는 아래 '작성 안내' 버튼을
+                        눌러주세요.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__reset">
+                  <button class="chat__reset-button prev">
+                    <span>작성 안내</span>
+                  </button>
+                  <button class="chat__reset-button home">
+                    <span>처음으로 돌아가기</span>
+                  </button>
+                </div>
+                <!-- 3-6 -->
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-text">문의하기</div>
+                  </div>
+                </div>
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>
+                        문의가 필요하신 내용을 아래 버튼 중 클릭해 주세요.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-button-container">
+                      <button class="chat__user-button">전화상담</button
+                      ><button class="chat__user-button">제 1공장 주소</button>
+                    </div>
+                    <div class="chat__user-button-container">
+                      <button class="chat__user-button">제 2공장 주소</button
+                      ><button class="chat__user-button">
+                        처음으로 돌아가기
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3-6-1 -->
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-text">전화상담</div>
+                  </div>
+                </div>
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>
+                        전화상담을 도와드릴 연락처는 아래와 같습니다.<br /><br />
+                        T.02-993-1539<br />H. 010-9167-7883
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-button-container">
+                      <button class="chat__user-button">
+                        처음으로 돌아가기
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3-6-2 -->
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-text">제 1공장 주소</div>
+                  </div>
+                </div>
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>
+                        제 1공장 주소는 아래와 같습니다. <br />서울시 도봉로 110
+                        라길 18<br />T.02-993-1539
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-button-container">
+                      <button class="chat__user-button">
+                        처음으로 돌아가기
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3-6-3 -->
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-text">제 2공장 주소</div>
+                  </div>
+                </div>
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>
+                        제 2공장 주소는 아래와 같습니다.<br />의정부시 배꽃길 7.
+                        의정부 더리브 센텀스퀘어 2동 507호<br />T. 031-543-0863
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-button-container">
+                      <button class="chat__user-button">
+                        처음으로 돌아가기
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3-7-1 -->
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-text">주문내역</div>
+                  </div>
+                </div>
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>주문 내역이 있으신가요?</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-button-container">
+                      <button class="chat__user-button">예</button>
+                      <button class="chat__user-button">아니요</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__chatbot">
+                  <div class="chat__name"></div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>
+                        개인 정보 기반의 맞춤형 서비스를 위해 이름과 휴대폰
+                        번호를 기입해주세요.
+                      </div>
+                    </div>
+                    <div class="chat__text">
+                      <div class="chat__input-container">
+                        <div class="chat__input">
+                          <span>이름</span>
+                          <input
+                            type="text"
+                            class="input-required"
+                            name="name"
+                            placeholder="Ex. 홍길동"
+                            style="padding: 10px"
+                          />
+                        </div>
+                        <div class="chat__input">
+                          <span>휴대폰 번호</span>
+                          <input
+                            type="text"
+                            class="input-required"
+                            name="phoneNumber"
+                            placeholder="Ex. 01012345678"
+                            style="padding: 10px"
+                          />
+                        </div>
+                        <div class="chat__select">
+                          <button class="button-container__button">제출</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3-7-2 -->
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>
+                        제출이 완료되었습니다. <br />{유저명} 님의 주문
+                        내역입니다.
+                      </div>
+                    </div>
+                    <div class="chat__text">
+                      <div>
+                        <h3>OOO 님의 주문 내역입니다.</h3>
+                        <br /><strong>주문 일자</strong> : 2024-08-01
+                        <br /><strong>주문자명</strong> : OOO <br /><strong
+                          >결제 금액</strong
+                        >
+                        : OOO원 <br /><strong>결제 방법 </strong>: 현금 입금
+                        <br /><strong>배송 상태</strong> : 주문 접수
+                        <br /><strong>주문 상품</strong> : OOO학교 하복 하의,
+                        100 SIZE, 입학년도 2023
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-button-container">
+                      <button class="chat__user-button">배송 문의</button>
+                      <button class="chat__user-button">
+                        처음으로 돌아가기
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3-8-1 -->
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-text">주문내역</div>
+                  </div>
+                </div>
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>주문 내역이 있으신가요?</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-button-container">
+                      <button class="chat__user-button">예</button>
+                      <button class="chat__user-button">아니요</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__chatbot">
+                  <div class="chat__name"></div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>
+                        개인 정보 기반의 맞춤형 서비스를 위해 이름과 휴대폰
+                        번호를 기입해주세요.
+                      </div>
+                    </div>
+                    <div class="chat__text">
+                      <div class="chat__input-container">
+                        <div class="chat__input">
+                          <span>이름</span>
+                          <input
+                            type="text"
+                            class="input-required"
+                            name="name"
+                            placeholder="Ex. 홍길동"
+                            style="padding: 10px"
+                          />
+                        </div>
+                        <div class="chat__input">
+                          <span>휴대폰 번호</span>
+                          <input
+                            type="text"
+                            class="input-required"
+                            name="phoneNumber"
+                            placeholder="Ex. 01012345678"
+                            style="padding: 10px"
+                          />
+                        </div>
+                        <div class="chat__select">
+                          <button class="button-container__button">제출</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3-8-2 -->
+                <img
+                  src="/static/taekyungsa/images/png/logo.png"
+                  alt="avatar"
+                  class="chat__img"
+                />
+                <div class="chat__chatbot">
+                  <div class="chat__name">태경사</div>
+                  <div class="chat__text-container">
+                    <div class="chat__text">
+                      <div>
+                        제출이 완료되었습니다. <br />궁금하신 내용을
+                        선택해주세요!
+                      </div>
+                    </div>
+                    <div class="chat__text">
+                      <div>
+                        <h3>OOO 님의 배송 관련 정보 입니다.</h3>
+                        <br /><strong>주문 일자</strong> : 2024-08-01
+                        <br /><strong>배송 상태</strong> : 주문 접수
+                        <br /><strong>주문 상품</strong> : OOO학교 하복 하의,
+                        100 SIZE, 입학년도 2023<br /><strong
+                          >출고 예정일</strong
+                        >
+                        : 2024-09-12 <br /><strong>배송 예정일 </strong>:
+                        2024-09-15
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat__user">
+                  <div class="chat__user-text-container">
+                    <div class="chat__user-button-container">
+                      <button class="chat__user-button">
+                        처음으로 돌아가기
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom -->
+        <div class="bottom">
+          <div class="bottom__container">
+            <div class="input__container">
+              <input
+                class="input-box"
+                type="text"
+                placeholder="질문을 입력해 주세요."
+              />
+              <button type="button" style="width: 50px; border-radius: 10px">
+                전송
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //챗봇 -->
+    </div>
+  </body>
+  <script>
+    const chatbotButton = document.getElementById("chatbotButton");
+    const chatbot = document.getElementById("chatbot");
+
+    chatbotButton.addEventListener("click", function () {
+      if (chatbot.style.display === "none") {
+        chatbot.style.display = "block";
+      } else {
+        chatbot.style.display = "none";
+      }
+    });
+  </script>
+</html>
