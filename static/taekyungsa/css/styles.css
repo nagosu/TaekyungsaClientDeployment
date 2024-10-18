@@ -17,7 +17,7 @@ sub all .sub {
 
 .sub .contents h1 {
   font-size: 2.5rem;
-  font-family: "GmarketSansMedium";
+  font-family: 'GmarketSansMedium';
   text-align: left;
   padding: 10px 0;
   border-top: 1px solid #999;
@@ -26,7 +26,7 @@ sub all .sub {
 .clearfix:before,
 .clearfix:after {
   display: table;
-  content: "";
+  content: '';
 }
 .clearfix:after {
   clear: both;
@@ -51,7 +51,7 @@ sub all .sub {
 
 sub .contents h1 {
   font-size: 2.5rem;
-  font-family: "GmarketSansMedium";
+  font-family: 'GmarketSansMedium';
   text-align: left;
   padding: 10px 0;
   border-top: 1px solid #999;
@@ -101,7 +101,7 @@ sub .contents h1 {
   line-height: 45px;
 }
 .sub02_01 .contents .sbox .ssbox .inputbox select,
-.sub02_01 .contents .sbox .ssbox .inputbox input[type="text"] {
+.sub02_01 .contents .sbox .ssbox .inputbox input[type='text'] {
   float: right;
   display: block;
   width: 50%;
@@ -153,9 +153,12 @@ sub .contents h1 {
   border-color: rgb(153, 153, 153);
   margin-bottom: 20px;
   font-size: 1.25rem;
-  font-family: "GmarketSansMedium", sans-serif;
+  font-family: 'GmarketSansMedium', sans-serif;
   display: flex;
   justify-content: space-between;
+}
+.item__wrapper span {
+  color: #000;
 }
 .item__wrapper .item-price {
   color: rgb(212, 61, 96);
@@ -307,7 +310,7 @@ sub .contents h1 {
 }
 .sub03_01 .contents .sbox .ssbox:last-child p span {
   font-size: 3.125rem;
-  font-family: "GmarketSansBold";
+  font-family: 'GmarketSansBold';
   color: #333;
   opacity: 0.3;
   letter-spacing: -2px;
@@ -340,7 +343,7 @@ sub .contents h1 {
   line-height: 45px;
 }
 .sub04_01 .contents .sbox .ssbox .inputbox select,
-.sub04_01 .contents .sbox .ssbox .inputbox input[type="text"] {
+.sub04_01 .contents .sbox .ssbox .inputbox input[type='text'] {
   float: right;
   display: block;
   width: 50%;
@@ -369,7 +372,7 @@ sub .contents h1 {
 .sub04_01 .contents .sbox .ssbox .inputbox div:last-child {
   text-align: center;
 }
-.sub04_01 .contents .sbox .ssbox .inputbox div:last-child input[type="button"] {
+.sub04_01 .contents .sbox .ssbox .inputbox div:last-child input[type='button'] {
   padding: 10px 20px;
 }
 
@@ -377,7 +380,7 @@ sub .contents h1 {
   .contents
   .sbox
   .ordercheckbox
-  input[type="text"]:last-of-type::placeholder {
+  input[type='text']:last-of-type::placeholder {
   color: red;
 }
 /* 비회원으로 조회 ------------------------*/
@@ -583,7 +586,7 @@ sub .contents h1 {
   margin-bottom: 30px;
   letter-spacing: -2px;
   color: #323dcc;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #000;
 }
 .sub06_01 .contents .sbox .ssbox:first-child h1 span {
@@ -593,7 +596,7 @@ sub .contents h1 {
 }
 .sub06_01 .contents .sbox .ssbox:first-child p:first-of-type {
   line-height: 2em;
-  font-family: "GmarketSansLight";
+  font-family: 'GmarketSansLight';
 }
 .sub06_01 .contents .sbox .ssbox:first-child p:first-of-type b {
   font-weight: bold;
@@ -614,7 +617,7 @@ sub .contents h1 {
   border-top: 1px solid #999;
   padding: 10px 0;
   font-size: 2.5rem;
-  font-family: "GmarketSansMedium";
+  font-family: 'GmarketSansMedium';
   text-align: left;
 }
 .sub06_01 .contents .sbox iframe {
